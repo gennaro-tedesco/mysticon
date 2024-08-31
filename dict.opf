@@ -16,15 +16,20 @@
     <item id="cover"
           href="cover.html"
           media-type="application/xhtml+xml" />
-    <item id="content"
-          href="content.html"
+    <item id="characters"
+          href="characters.html"
+          media-type="application/xhtml+xml" />
+    <item id="geography"
+          href="geography.html"
+          media-type="application/xhtml+xml" />
+    <item id="trivia"
+          href="trivia.html"
           media-type="application/xhtml+xml" />
   </manifest>
   <spine>
     <itemref idref="cover" />
-    <itemref idref="content"/>
+    <itemref idref="characters"/>
+    <itemref idref="geography"/>
+    <itemref idref="trivia"/>
   </spine>
-  <guide>
-    <reference type="index" title="IndexName" href="content.html"/>
-  </guide>
 </package>
