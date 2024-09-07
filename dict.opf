@@ -13,8 +13,8 @@
   </metadata>
   <manifest>
     <item href="cover.jpg" id="cover-image" media-type="image/jpg" />
-    <item id="cover"
-          href="cover.html"
+    <item id="titlepage"
+          href="titlepage.html"
           media-type="application/xhtml+xml" />
     <item id="characters"
           href="characters.html"
@@ -27,7 +27,7 @@
           media-type="application/xhtml+xml" />
   </manifest>
   <spine>
-    <itemref idref="cover" />
+    <itemref idref="titlepage" />
     <itemref idref="characters"/>
     <itemref idref="geography"/>
     <itemref idref="trivia"/>
