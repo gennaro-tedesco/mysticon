@@ -7,6 +7,12 @@ dd {
 	margin: 2;
 }
 
-h1 {
+h1,
+h2 {
 	text-align: center;
+}
+
+.copyright {
+	margin-top: 5;
+	text-align: left;
 }
