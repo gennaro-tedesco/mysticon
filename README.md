@@ -10,8 +10,17 @@ Mysticon is a collection of kindle dictionary for fantasy series. The following 
 ## Installation
 
 - Browse to the relevant dictionary folder
-- Copy the `.mobi` (or `.epub`) file into the `/dictionary/` folder on your kindle device
+- Copy the `.mobi` (or `.epub`) file into the `/documents/dictionaries/` folder on your kindle device
 - On your kindle, select a word to look up and choose as dictionary the newly installed one
+
+## Examples
+
+<details>
+  <summary>Show examples</summary>
+
+<img width="400" src="https://github.com/user-attachments/assets/3eae7f53-cf7a-49ff-8f6c-c92cd1ba9d31">
+<img width="400" src="https://github.com/user-attachments/assets/88a5e981-3075-4069-9fc2-4b29f2db410b">
+</details>
 
 ## Development
 
