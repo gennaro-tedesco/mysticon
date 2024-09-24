@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId">
   <metadata>
-    <dc:title>King Arthur dictionary</dc:title>
+    <dc:title>The Warlord Chronicles dictionary</dc:title>
     <dc:creator opf:role="aut">Gennaro Tedesco</dc:creator>
     <dc:language>en</dc:language>
     <meta name="cover" content="cover-image" />
