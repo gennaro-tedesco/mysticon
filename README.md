@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://github.com/user-attachments/assets/4672f9a1-3e99-456f-87a3-932bbc17b847" width="100">
+  <img src="https://github.com/user-attachments/assets/1f3709cc-6eec-4a49-bf6b-8ae43ddf4fb7" width="300">
 </h1>
 
 Mysticon is a collection of kindle dictionary for fantasy series. The following dictionaries are available:
