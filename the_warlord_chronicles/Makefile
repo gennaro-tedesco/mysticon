@@ -1,4 +1,4 @@
-BOOK=arthur
+BOOK=warlord_chronicles
 
 .PHONY: *
 
