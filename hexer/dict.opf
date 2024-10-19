@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId">
+  <metadata>
+    <dc:title>Das Hexer Saga Lexikon</dc:title>
+    <dc:creator opf:role="aut">Gennaro Tedesco</dc:creator>
+    <dc:language>de</dc:language>
+    <meta name="cover" content="cover-image" />
+    <x-metadata>
+      <DictionaryInLanguage>de</DictionaryInLanguage>
+	  <DictionaryOutLanguage>de</DictionaryOutLanguage>
+      <DefaultLookupIndex>default</DefaultLookupIndex>
+    </x-metadata>
+  </metadata>
+  <manifest>
+    <item href="cover.jpg" id="cover-image" media-type="image/jpg" />
+    <item id="titlepage"
+          href="titlepage.html"
+          media-type="application/xhtml+xml" />
+    <item id="characters"
+          href="characters.html"
+          media-type="application/xhtml+xml" />
+    <item id="geography"
+          href="geography.html"
+          media-type="application/xhtml+xml" />
+    <item id="trivia"
+          href="trivia.html"
+          media-type="application/xhtml+xml" />
+  </manifest>
+  <spine>
+    <itemref idref="titlepage" />
+    <itemref idref="characters"/>
+    <itemref idref="geography"/>
+    <itemref idref="trivia"/>
+  </spine>
+</package>
