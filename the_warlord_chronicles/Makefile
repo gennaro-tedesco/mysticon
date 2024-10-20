@@ -11,3 +11,6 @@ build: clean
 
 convert: build
 	/Applications/calibre.app/Contents/MacOS/ebook-convert ${BOOK}.mobi ${BOOK}.epub
+
+install:
+	cp ${BOOK}.mobi /Volumes/Kindle/documents/dictionaries
