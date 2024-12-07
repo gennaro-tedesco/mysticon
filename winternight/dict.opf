@@ -22,10 +22,14 @@
     <item id="girl_tower"
           href="girl_tower.html"
           media-type="application/xhtml+xml" />
+    <item id="winter_witch"
+          href="winter_witch.html"
+          media-type="application/xhtml+xml" />
   </manifest>
   <spine>
     <itemref idref="titlepage" />
     <itemref idref="bear_nightingale"/>
     <itemref idref="girl_tower"/>
+    <itemref idref="winter_witch"/>
   </spine>
 </package>
