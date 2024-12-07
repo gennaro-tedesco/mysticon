@@ -19,9 +19,13 @@
     <item id="bear_nightingale"
           href="bear_nightingale.html"
           media-type="application/xhtml+xml" />
+    <item id="girl_tower"
+          href="girl_tower.html"
+          media-type="application/xhtml+xml" />
   </manifest>
   <spine>
     <itemref idref="titlepage" />
     <itemref idref="bear_nightingale"/>
+    <itemref idref="girl_tower"/>
   </spine>
 </package>
