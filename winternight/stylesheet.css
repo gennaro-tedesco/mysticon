@@ -1,7 +1,9 @@
 dt {
 	font-weight: bold;
 	font-style: italic;
+	text-transform: uppercase;
 }
+
 
 dd {
 	margin: 2;
