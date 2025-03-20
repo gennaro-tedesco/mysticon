@@ -7,7 +7,6 @@ Mysticon is a collection of kindle dictionary for fantasy series. The following 
 
 - [The Warlord Chronicles](/the_warlord_chronicles) (B. Cornwell)
 - [Die Hexer Saga](/hexer) (A. Sapkowski)
-- [The Winternight Trilogy](/winternight) (K. Arden)
 
 ## Installation
 
