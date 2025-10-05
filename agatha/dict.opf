@@ -22,10 +22,14 @@
 	<item id="marple"
           href="marple.html"
           media-type="application/xhtml+xml" />
+	<item id="others"
+          href="others.html"
+          media-type="application/xhtml+xml" />
   </manifest>
   <spine>
     <itemref idref="titlepage" />
     <itemref idref="poirot"/>
     <itemref idref="marple"/>
+    <itemref idref="others"/>
   </spine>
 </package>
