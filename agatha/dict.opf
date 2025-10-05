@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId">
+  <metadata>
+    <dc:title>Agatha Christie dictionary</dc:title>
+    <dc:creator opf:role="aut">Gennaro Tedesco</dc:creator>
+    <dc:language>en</dc:language>
+    <meta name="cover" content="cover-image" />
+    <x-metadata>
+      <DictionaryInLanguage>en</DictionaryInLanguage>
+	  <DictionaryOutLanguage>en</DictionaryOutLanguage>
+      <DefaultLookupIndex>default</DefaultLookupIndex>
+    </x-metadata>
+  </metadata>
+  <manifest>
+    <item href="cover.png" id="cover-image" media-type="image/png" />
+    <item id="titlepage"
+          href="titlepage.html"
+          media-type="application/xhtml+xml" />
+    <item id="poirot"
+          href="poirot.html"
+          media-type="application/xhtml+xml" />
+	<item id="marple"
+          href="marple.html"
+          media-type="application/xhtml+xml" />
+	<item id="others"
+          href="others.html"
+          media-type="application/xhtml+xml" />
+  </manifest>
+  <spine>
+    <itemref idref="titlepage" />
+    <itemref idref="poirot"/>
+    <itemref idref="marple"/>
+    <itemref idref="others"/>
+  </spine>
+</package>
