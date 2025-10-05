@@ -16,12 +16,16 @@
     <item id="titlepage"
           href="titlepage.html"
           media-type="application/xhtml+xml" />
-    <item id="characters"
-          href="characters.html"
+    <item id="poirot"
+          href="poirot.html"
+          media-type="application/xhtml+xml" />
+	<item id="marple"
+          href="marple.html"
           media-type="application/xhtml+xml" />
   </manifest>
   <spine>
     <itemref idref="titlepage" />
-    <itemref idref="characters"/>
+    <itemref idref="poirot"/>
+    <itemref idref="marple"/>
   </spine>
 </package>
