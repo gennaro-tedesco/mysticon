@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId">
+  <metadata>
+    <dc:title>Malazan Book of the Fallen dictionary</dc:title>
+    <dc:creator opf:role="aut">Gennaro Tedesco</dc:creator>
+    <dc:language>en</dc:language>
+    <meta name="cover" content="cover-image" />
+    <x-metadata>
+      <DictionaryInLanguage>en</DictionaryInLanguage>
+	  <DictionaryOutLanguage>en</DictionaryOutLanguage>
+      <DefaultLookupIndex>default</DefaultLookupIndex>
+    </x-metadata>
+  </metadata>
+  <manifest>
+    <item href="cover.png" id="cover-image" media-type="image/png" />
+    <item id="titlepage"
+          href="titlepage.html"
+          media-type="application/xhtml+xml" />
+    <item id="gotm"
+          href="gotm.html"
+          media-type="application/xhtml+xml" />
+  </manifest>
+  <spine>
+    <itemref idref="titlepage" />
+    <itemref idref="gotm"/>
+  </spine>
+</package>
