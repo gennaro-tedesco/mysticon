@@ -19,9 +19,13 @@
     <item id="gotm"
           href="gotm.html"
           media-type="application/xhtml+xml" />
+    <item id="locations"
+          href="locations.html"
+          media-type="application/xhtml+xml" />
   </manifest>
   <spine>
     <itemref idref="titlepage" />
     <itemref idref="gotm"/>
+    <itemref idref="locations"/>
   </spine>
 </package>
