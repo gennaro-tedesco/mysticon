@@ -1,0 +1,19 @@
+dt {
+	font-weight: bold;
+	font-style: italic;
+}
+
+dd {
+	margin: 2;
+	text-align: justify;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+.copyright {
+	margin-top: 5em;
+	text-align: justify;
+}
