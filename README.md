@@ -8,6 +8,7 @@ Mysticon is a collection of kindle dictionary for fantasy series. The following 
 - [The Warlord Chronicles](/the_warlord_chronicles) (B. Cornwell)
 - [Die Hexer Saga](/hexer) (A. Sapkowski)
 - [Agatha Christie characters](/agatha) (A. Christie)
+- [The Malazan book of the Fallen](/malazan) (S. Erikson)
 
 ## Installation
 
