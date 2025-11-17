@@ -22,10 +22,14 @@
     <item id="locations"
           href="locations.html"
           media-type="application/xhtml+xml" />
+    <item id="peoples"
+          href="peoples.html"
+          media-type="application/xhtml+xml" />
   </manifest>
   <spine>
     <itemref idref="titlepage" />
     <itemref idref="gotm"/>
     <itemref idref="locations"/>
+    <itemref idref="peoples"/>
   </spine>
 </package>
