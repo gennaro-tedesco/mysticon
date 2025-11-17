@@ -22,6 +22,12 @@
     <item id="locations"
           href="locations.html"
           media-type="application/xhtml+xml" />
+	<item id="ascendants"
+          href="ascendants.html"
+          media-type="application/xhtml+xml" />
+	<item id="bridgeburners"
+          href="bridgeburners.html"
+          media-type="application/xhtml+xml" />
     <item id="peoples"
           href="peoples.html"
           media-type="application/xhtml+xml" />
@@ -30,6 +36,8 @@
     <itemref idref="titlepage" />
     <itemref idref="gotm"/>
     <itemref idref="locations"/>
+    <itemref idref="ascendants"/>
+    <itemref idref="bridgeburners"/>
     <itemref idref="peoples"/>
   </spine>
 </package>
