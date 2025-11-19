@@ -12,7 +12,6 @@
     </x-metadata>
   </metadata>
   <manifest>
-    <item href="cover.png" id="cover-image" media-type="image/png" />
     <item id="titlepage"
           href="titlepage.html"
           media-type="application/xhtml+xml" />
