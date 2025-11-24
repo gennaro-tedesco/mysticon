@@ -1,0 +1,20 @@
+repos:
+  - repo: local
+    hooks:
+      - id: js-beautify-html
+        name: js-beautify HTML
+        entry: js-beautify
+        language: system
+        types: [html]
+        args:
+          [
+            "--type",
+            "html",
+            "--indent-size",
+            "2",
+            "--wrap-line-length",
+            "100",
+            "--end-with-newline",
+            "false",
+            "-r",
+          ]
