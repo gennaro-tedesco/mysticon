@@ -30,6 +30,9 @@
     <item id="peoples"
           href="peoples.html"
           media-type="application/xhtml+xml" />
+    <item id="trivia"
+          href="trivia.html"
+          media-type="application/xhtml+xml" />
   </manifest>
   <spine>
     <itemref idref="titlepage" />
@@ -38,5 +41,6 @@
     <itemref idref="ascendants"/>
     <itemref idref="bridgeburners"/>
     <itemref idref="peoples"/>
+    <itemref idref="trivia"/>
   </spine>
 </package>
