@@ -35,3 +35,7 @@ make build # to generate .mobi
 make convert # to convert to .epub
 make install # to copy the .mobi dictionary to your kindle
 ```
+
+### Duplicates check
+
+- Run `lua list.lua /folder` to determine whether duplicate entries across the `.html` files in `/folder` exist.
