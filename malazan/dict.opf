@@ -18,6 +18,9 @@
     <item id="gotm"
           href="gotm.html"
           media-type="application/xhtml+xml" />
+    <item id="dg"
+          href="dg.html"
+          media-type="application/xhtml+xml" />
     <item id="locations"
           href="locations.html"
           media-type="application/xhtml+xml" />
@@ -37,6 +40,7 @@
   <spine>
     <itemref idref="titlepage" />
     <itemref idref="gotm"/>
+    <itemref idref="dg"/>
     <itemref idref="locations"/>
     <itemref idref="ascendants"/>
     <itemref idref="bridgeburners"/>
