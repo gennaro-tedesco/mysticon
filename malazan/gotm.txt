@@ -22,7 +22,6 @@ Derudan	Witch of Tennes and member of the T'orrud Cabal.<br>
 Doan	Largest of the Hounds of Shadow, first-born of Rood and its first mate Pallick, later slain by Anomander Rake and chained within the sword <i>Dragnipur</i>.<br>
 Dujek Onearm|Dujek	High Fist commanding the Malazan armies in the Genabackis campaign, famed for his missing arm which had been severed just below the shoulder. He was considered one of the great commanders, inspiring a sense of security, stability and sanity in his followers. He despised tyranny.<br>
 Eel	Mysterious master-spy whose hidden agents influence events in Darujhistan.<br>
-Emperor Kellanved|Kellanved	Shadowy founder of the Malazan Empire, later overthrown and assassinated before the events in Darujhistan.<br>
 Empress Laseen|Laseen	Ruler of the Malazan Empire, former head of the Claw who seized the throne from Kellanved.<br>
 Estraysian D'Arle|Estraysian	Influential councilman of Darujhistan and rival to Turban Orr.<br>
 Fingers	Sixth Blade of the Crimson Guard, noted for his quick hands and skill.<br>
@@ -46,7 +45,6 @@ Lim	Council member allied with Turban Orr in Darujhistan politics.<br>
 Logros	Commander of the T'lan Imass clans bound to serve the Malazan Empire.<br>
 Lorn	Adjunct to Empress Laseen, the cold and implacable representative of imperial will. Young and with long auburn hair, she was an accomplished rider capable of mastering a warhorse stallion bred of the finest lines of Seven Cities stock.<br> She carried an Otataral longsword which negated sorcery. Possibly the sword itself or her long association with it gave her the ability to know the patterns of sorcery and the pattern of the minds that used it.
 Mammot	High Priest of D'riss and noted scholar in Darujhistan, uncle to Crokus Younghand.<br>
-Mappo	Trell warrior and longtime companion charged with guiding and guarding Icarium.<br>
 Meese	Tough regular at the Phoenix Inn, often seen guarding its doors with Irilta.<br>
 Murillio	Polished courtier and swordsman who keeps company with Kruppe and the Phoenix Inn regulars.<br>
 Nightchill	Reserved High Sorceress of the Empire whose power places her among its foremost mages.<br>
@@ -55,7 +53,7 @@ Onos T'oolan|Tool	Ancient T'lan Imass warrior travelling with Adjunct Lorn as a 
 Orfantal	Young Tiste Andii night-hunter in Anomander Rake's service.<br>
 Parald	High Mage of the T'orrud Cabal, working alongside Baruk in Darujhistan.<br>
 Pran Chole	Bonecaster of the Kron T'lan Imass and shaman of his people.<br>
-Pormqual	High Fist of the Seven Cities continent, based in Aren. He was described as tall, wiry, pale, and slope-shouldered with a thin, oiled face, wearing "clothes that would beggar a king." Despite owning stables of fine horses, he was a poor rider. Pormqual was despised by the Red Blades. During the Whirlwind rebellion, Pormqual readied to abandon Aren, evacuating his household and prized breeding stallions. He was betrayed by Mallick Rel and beheaded by Korbolo Dom.<br>
+Pormqual	High Fist of the Seven Cities continent, based in Aren. He was described as tall, wiry, pale, and slope-shouldered with a thin, oiled face, wearing "clothes that would beggar a king." Despite owning stables of fine horses, he was a poor rider. Pormqual was despised by the Red Blades. During the Whirlwind rebellion, he readied to abandon Aren, evacuating his household and prized breeding stallions.<br>
 Prince K'azz D'Avore|K'azz D'Avore	Prince and commander of the mercenary Crimson Guard.<br>
 Raest	Undead Jaghut Tyrant imprisoned in a barrow in the Gadrobi Hills by his own people for his tyranny over the Imass; his power was stored separately in a Finnest that took the form of an acorn. Gaunt and nearly fleshless, ribs jutting with flayed green skin hanging in strips, pit eyes and a tusked slash of a mouth, he dragged broken feet in black leather and tattered banded iron.<br>
 Rallick Nom|Nom|Rallick	Assassin in Ocelot’s clan in the Assassins’ Guild of Darujhistan. He was a regular of the Phoenix Inn with Kruppe, Coll, Crokus, and Murillio. Rallick acted as a mentor to Crokus, regularly offering advice about their trade and trying to keep the boy safe from harm.<br>
