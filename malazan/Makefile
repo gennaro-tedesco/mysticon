@@ -19,3 +19,4 @@ build: merge
 		--read-format=Tabfile \
 		--write-format=Stardict \
 		--write-options="sametypesequence=h"
+	rm -f ${MERGED_FILE}
