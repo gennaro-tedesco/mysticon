@@ -1,5 +1,3 @@
-#!/usr/bin/env -S luatex --luaonly
-
 local function parse_tabfile(filepath)
 	local file = io.open(filepath, "r")
 	if not file then
