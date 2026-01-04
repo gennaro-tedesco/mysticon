@@ -52,7 +52,7 @@ Breaker's Point	Coastal landmark near Unta on Quon Tali.
 Bridgeburner Crossing	A pass or chokepoint on Genabackis.
 Broken Coast	The jagged coastline of the Seven Cities subcontinent.
 Burning Shore	Coastal region of Genabackis.
-Cabal	Kingdom on the western side of the Seven Cities continent.
+Cabal	The Cabal Archipelago was a theocracy centred on the One God, on the same landmass as Seven Cities but far to the southwest; mostly islands, with mainland holdings on sheer mountainous coastal cliffs, and the people called Cabalhii.<br><br><i>"One day the sun will die and one day there will be no civil war in the Cabal Isles."</i><br>
 Caladan	Region on the continent of Quon Tali.
 Callows	City on the southwest part of Genabackis.
 Canopy	Coastal city on Jacuruku.

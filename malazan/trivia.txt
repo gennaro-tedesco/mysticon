@@ -29,6 +29,7 @@ Hood's Path	The Path of Death.
 Hounds of Shadow|Hound of Shadow|Hound	Servants of High House Shadow, believed to be more ancient than the Shadow Realm itself. Baran, Blind, Doan, Ganrod, Gear, Rood, and Shan: they are described as large, black, spectral dogs with glowing individually coloured eyes, relentless in their pursuit of prey.<br>
 House Shadow	Mutable House in the Deck of Dragons, aligned with Shadowthrone and Cotillion, prowling the liminal paths of Shadow while recruiting wanderers and rogues for motives hidden from gods and mortals alike.
 Imperial Warren	The Warren of the Malazan Empire, connecting many locations.
+Jhagra Til	The T'lan Imass name for a now-extinct inland sea formed when Jaghut ice-fields melted roughly three hundred thousand years before the main timeline; it existed briefly, and the silts left behind formed a natural sinkhole that trapped unwary animals.
 Kaschan	K'Chain Che'Malle Elder Warren, "Born of sounds beyond our hearing".
 Kurald Emurlahn	Tiste Edur Elder Warren of Shadow. Also known as The Shattered Warren.
 Kurald Galain	The Elder Warren of Darkness, domain of the Tiste Andii.
@@ -49,7 +50,7 @@ Tellann	The Elder Warren of the T'lan Imass. Once the Elder Warren of Fire, it w
 Tennes	The Path of the Land.
 The Path of Hands	Legendary route across Seven Cities for soletaken and D'ivers seeking ascension, converging on the Azath House Tremorlor during the events of Deadhouse Gates.
 The Paths	These are the Warrens most easily accessible to human mages and priests, used as a source of power.
-The T'orrud Cabal	The Cabal of Darujhistan, a secretive organization of powerful mages and alchemists who protect the city from magical threats and maintain the balance of power.
+T'orrud Cabal	A group of mages who were the true rulers of Darujhistan; during the Malazan advance they allied with Anomander Rake and his Tiste Andii against the Empire.
 The Tyrant Kings	The ancient rulers of Darujhistan who once held absolute power over the city. Their tyrannical reign ended long ago, but their legacy still haunts the city's history and architecture.
 Thyr	Warren of Light, a Path of sorcery of blinding radiance and wards, commonly worked by Imperial battle-mages such as Tattersail. Anathema to Rashan, the human Warren of Dark.<br>
 Warren	A realm from which mages, priests, shamans, and the like, who might use magic, drew their power. Structurally these Warrens were divided into two classes: Elder Warrens, which were associated with a particular race; and the Paths, which were those Warrens most commonly accessed by humans and which were derived from K'rul's blood. However, not all realms described as Warrens fit that description; The Abyss was named a Warren but seemed to be used only as a means of travel rather than a source of power. It is also possible that there was a difference on how some Warrens like the Abyss were created.<br><br><i>"The Warrens of Magic dwelt in the beyond. Find the gate and nudge it open a crack. What leaks out is yours to shape. Open yourself to the Warren that comes to you - that finds you. Draw forth its power - as much as your body and soul are capable of containing - but remember, when the body fails, the gate closes." (Tattersail)</i>
