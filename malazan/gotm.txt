@@ -10,7 +10,7 @@ Challice D'Arle|Challice	Youngest daughter of Estraysian D'Arle of House D'Arle 
 Chert	Local bully in Darujhistan, often encountering misfortune around the Phoenix Inn.<br>
 Choss	A Sub-commander of the Malaz 3rd Army at the Siege of Y'Ghatan under Dassem Ultor, alongside Amaron and Whiskeyjack. He was also Nok’s protege. After Dassem was wounded, Choss received a field promotion to High Fist and became interim commander of the Third Army. He was a wiry, battle-scarred man with a bushy tangled head of curly hair, a gold and russet beard, and thick, expressive brows. Being Napan, he presumably had blue-hued skin.<br>
 Circle Breaker	Nervous city guard secretly serving as an agent of the Eel.<br>
-Coll	Dispossessed Daru noble and drunk, friend to Murillio and Kruppe.<br>
+Coll	Noble of House Jhamin who lost his position and became a drunk; a regular at Darujhistan’s Phoenix Inn with Rallick Nom, Murillio, Crokus, and Kruppe, and sometimes an agent for the alchemist Baruk.
 Corporal Blues|Blues	Napan corporal of the Sixth Blade of the Crimson Guard, one of its most powerful mages and its preeminent finesse swordsman.<br>
 Cowl	High Mage of the Crimson Guard, feared for his subtle sorcery.<br>
 Crokus Younghand|Crokus	Seventeen-year-old Darujhistan thief and Phoenix Inn regular, orphaned by the Winged Plague and raised by his uncle Mammot.<br>
@@ -39,7 +39,7 @@ Kallor	Brood's proud and ruthless second-in-command, burdened with a dark past.<
 Kig Aven	Clan leader among the T'lan Imass.<br>
 Kin Clip|Clip	One of the Great Ravens inhabiting Moon's Spawn. She served under Great Mother Crone, the raven matriarch, and worked alongside Anomander Rake. Her fellow great raven, Hurtle, twice referred to her as Kin Clip and once called her simply Clip, suggesting "Kin" may have functioned as a kinship indicator rather than part of her formal name.<br>
 Korlat	Tiste Andii night-hunter and blood-kin to Serrat, serving under Rake.<br>
-Kruppe	Portly, loquacious Daru schemer and regular at the Phoenix Inn, fond of referring to himself in the third person.<br>
+Kruppe	Portly, loquacious Daru schemer and regular at the Phoenix Inn, fond of referring to himself in the third person. Surely, there is more to him that meets the eyes.<br>
 Krute of Talient|Krute	Agent of the Darujhistan Assassins' Guild who ran a gem shop on White Gold's Round, with a secret passage into Hinter's Tower.<br>
 Lim	Council member allied with Turban Orr in Darujhistan politics.<br>
 Logros	Commander of the T'lan Imass clans bound to serve the Malazan Empire.<br>
@@ -57,6 +57,7 @@ Pormqual	High Fist of the Seven Cities continent, based in Aren. He was describe
 Prince K'azz D'Avore|K'azz D'Avore	Prince and commander of the Crimson Guard, a charismatic tactician and long time enemy of the Malazan Empire who allied with Brood's coalition on Genabackis.<br>
 Raest	Undead Jaghut Tyrant imprisoned in a barrow in the Gadrobi Hills by his own people for his tyranny over the Imass; his power was stored separately in a Finnest that took the form of an acorn. Gaunt and nearly fleshless, ribs jutting with flayed green skin hanging in strips, pit eyes and a tusked slash of a mouth, he dragged broken feet in black leather and tattered banded iron.<br>
 Rallick Nom|Nom|Rallick	Assassin in Ocelot’s clan in the Assassins’ Guild of Darujhistan. He was a regular of the Phoenix Inn with Kruppe, Coll, Crokus, and Murillio. Rallick acted as a mentor to Crokus, regularly offering advice about their trade and trying to keep the boy safe from harm.<br>
+Roald	White-haired servant of the alchemist Baruk
 Rood	Ancient pack leader of the Hounds of Shadow, a fierce, scarred hunter whose charges have broken armies and shaken the Warren of Shadow.<br>
 Scurve	Barman of the Phoenix Inn in Darujhistan.<br>
 Serrat	Second-in-command to Anomander Rake among the Tiste Andii.<br>
@@ -76,4 +77,4 @@ Topper	Commander of the Claw, the Empress's elite corps of assassins.<br>
 Travale	Pious soldier serving within Baruk's T'orrud Cabal.<br>
 Turban Orr	Powerful and ambitious councilman of Darujhistan and lover of Lady Simtal.<br>
 Vildron	Member of the city guard of Darujhistan.<br>
-Vorcan	Formidable Mistress of the Assassins' Guild in Darujhistan, often called the Master of Assassins.<br>
+Vorcan	Daru woman who is the Mistress (Master) of the Assassins’ Guild in Darujhistan and a High Mage, noted for her long dark hair.
