@@ -1,6 +1,6 @@
 BOOK=malazan
 DICT_DIR=star_dict/
-MERGED_FILE=${BOOK}_combined.txt
+MERGED_FILE=${BOOK}_combined.stardict
 
 .PHONY: clean merge build all
 
@@ -11,7 +11,7 @@ clean:
 	-rm -f ${MERGED_FILE}
 
 merge: clean
-	cat *.txt > ${MERGED_FILE}
+	cat *.stardict > ${MERGED_FILE}
 
 build: merge
 	mkdir -p ${DICT_DIR}
