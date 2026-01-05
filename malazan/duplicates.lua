@@ -30,7 +30,7 @@ end
 
 local function get_txt_files(directory)
 	local files = {}
-	local pfile = io.popen('find "' .. directory .. '" -maxdepth 1 -name "*.txt" -type f')
+	local pfile = io.popen('fd -H -I -d 1 -t f -e stardict . "' .. directory .. '"')
 	if pfile then
 		for filename in pfile:lines() do
 			table.insert(files, filename)
@@ -44,7 +44,7 @@ local function find_duplicates(directory)
 	local files = get_txt_files(directory)
 
 	if #files == 0 then
-		print("No .txt files found in: " .. directory)
+		print("No .stardict files found in: " .. directory)
 		return
 	end
 
