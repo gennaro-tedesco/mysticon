@@ -1,5 +1,5 @@
 BOOK=malazan
-DICT_DIR=star_dict/
+DICT_DIR=dict/
 MERGED_FILE=${BOOK}_combined.stardict
 
 .PHONY: clean merge build all
