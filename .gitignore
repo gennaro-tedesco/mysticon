@@ -2,3 +2,4 @@
 *.epub
 
 **/AGENTS.md
+**/*combined.txt
