@@ -34,4 +34,4 @@ make install # to copy the dictionary to your target device
 ### Duplicates check
 
 - For kindle: run `lua list.lua /folder` to determine whether duplicate entries across the `.html` files in `/folder` exist.
-- For StarDict: run `lua duplicates.lua /folder` to determine whether duplicate entries across the `.txt` files in `/folder` exist.
+- For StarDict: run `lua duplicates.lua /folder` to determine whether duplicate entries across the `.stardict` files in `/folder` exist.
