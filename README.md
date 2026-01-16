@@ -5,10 +5,13 @@
 
 Mysticon is a collection of kindle and StarDict dictionary for fantasy series. The following dictionaries are available:
 
-- [The Warlord Chronicles](/the_warlord_chronicles) (B. Cornwell)
-- [Die Hexer Saga](/hexer) (A. Sapkowski)
-- [Agatha Christie characters](/agatha) (A. Christie)
-- [The Malazan book of the Fallen](/malazan) (S. Erikson)
+| Title | Author | Language | Format |
+|-------|--------|----------|--------|
+| [The Warlord Chronicles](/the_warlord_chronicles) | B. Cornwell | en | kindle |
+| [Die Hexer Saga](/hexer) | A. Sapkowski | de | kindle |
+| [Agatha Christie characters](/agatha) | A. Christie | en | kindle |
+| [The Malazan book of the Fallen](/malazan) | S. Erikson | en | stardict |
+| [Zamonien](/zamonien) | W. Moers | de | stardict |
 
 ## Installation
 
