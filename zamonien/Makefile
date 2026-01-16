@@ -1,4 +1,4 @@
-BOOK=zamonien
+BOOK=Zamonien
 DICT_DIR=dict/
 MERGED_FILE=${BOOK}_combined.stardict
 
@@ -18,5 +18,6 @@ build: merge
 	uvx pyglossary ${MERGED_FILE} ${DICT_DIR}/${BOOK}.ifo \
 		--read-format=Tabfile \
 		--write-format=Stardict \
-		--write-options="sametypesequence=h"
+		--write-options="sametypesequence=h" \
+		--name="${BOOK} Lexicon"
 	rm -f ${MERGED_FILE}
