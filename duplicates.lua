@@ -48,6 +48,16 @@ local function find_duplicates(directory)
 		return
 	end
 
+	-- Filter out disambiguation files
+	local filtered_files = {}
+	for _, filepath in ipairs(files) do
+		local filename = filepath:match("([^/]+)$")
+		if not filename:match("disambiguation") then
+			table.insert(filtered_files, filepath)
+		end
+	end
+	files = filtered_files
+
 	print("Scanning " .. #files .. " file(s) for duplicates...\n")
 
 	local global_entries = {}
