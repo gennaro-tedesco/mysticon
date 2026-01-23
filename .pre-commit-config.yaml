@@ -18,3 +18,7 @@ repos:
             "false",
             "-r",
           ]
+  - repo: https://github.com/JohnnyMorganz/StyLua
+    rev: v0.14.3
+    hooks:
+      - id: stylua
