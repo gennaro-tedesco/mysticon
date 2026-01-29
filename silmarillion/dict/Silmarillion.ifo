@@ -1,8 +1,8 @@
 StarDict's dict ifo file
 version=3.0.0
 bookname=Silmarillion Lexicon
-wordcount=63
-idxfilesize=953
+wordcount=151
+idxfilesize=2405
 sametypesequence=h
-synwordcount=8
+synwordcount=42
 description=
