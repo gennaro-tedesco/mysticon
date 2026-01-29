@@ -12,11 +12,12 @@ Mysticon is a collection of kindle and StarDict dictionary for fantasy series. T
 | [Agatha Christie characters](/agatha) | A. Christie | en | kindle |
 | [The Malazan book of the Fallen](/malazan) | S. Erikson | en | stardict |
 | [Zamonien](/zamonien) | W. Moers | de | stardict |
+| [The Silmarillion](/silmarillin) | J. R. R. Tolkien | en | stardict |
 
 ## Installation
 
 - Browse to the relevant dictionary folder
-- Copy the output dictionary into the relevant folder on your target device
+- Copy the output dictionary into the appropriate folder on your target device
 
 ## Examples
 
