@@ -12,8 +12,8 @@ local function parse_tabfile(filepath)
 		local tab_pos = line:find("\t")
 		if tab_pos then
 			local headwords_part = line:sub(1, tab_pos - 1)
-			for headword in headwords_part:gmatch("[^|]+") do
-				headword = headword:match("^%s*(.-)%s*$")
+			for raw_headword in headwords_part:gmatch("[^|]+") do
+				local headword = raw_headword:match("^%s*(.-)%s*$")
 				if headword ~= "" then
 					if not entries[headword] then
 						entries[headword] = {}
