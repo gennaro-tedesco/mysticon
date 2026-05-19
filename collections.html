@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mysticon — Collections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600&family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
+</head>
+<body class="page-collections">
+
+  <nav class="nav">
+    <a href="index.html" class="nav-home" aria-label="Home">
+      <i data-lucide="house" width="18" height="18"></i>
+    </a>
+    <div class="nav-links">
+      <button class="nav-btn" id="about-btn">About</button>
+      <a href="collections.html" class="nav-btn nav-btn--active">Collections</a>
+    </div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <i data-lucide="moon" class="icon-light-mode"></i>
+      <i data-lucide="sun"  class="icon-dark-mode"></i>
+    </button>
+  </nav>
+
+  <main class="collections-page">
+    <div class="collections-bg-logo">
+      <img src="https://github.com/user-attachments/assets/1f3709cc-6eec-4a49-bf6b-8ae43ddf4fb7" alt="">
+    </div>
+    <div class="card-grid" id="card-grid"></div>
+  </main>
+
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div class="modal-title"></div>
+      <div class="modal-author"></div>
+      <div class="modal-tags"></div>
+      <a class="modal-download" id="modal-download">Download</a>
+      <div class="modal-progress" id="modal-progress">
+        <div class="modal-progress-bar" id="modal-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="drawer" id="drawer">
+    <button class="drawer-close" id="drawer-close"><i data-lucide="x"></i></button>
+    <div class="drawer-content">
+      <h2 class="drawer-title">About</h2>
+    </div>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/fflate@0.8.2/umd/index.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mysticon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500&family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
+</head>
+<body class="page-home">
+
+  <nav class="nav">
+    <div class="nav-links">
+      <button class="nav-btn" id="about-btn">About</button>
+      <a href="collections.html" class="nav-btn">Collections</a>
+    </div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <i data-lucide="moon" class="icon-light-mode"></i>
+      <i data-lucide="sun"  class="icon-dark-mode"></i>
+    </button>
+  </nav>
+
+  <main class="hero">
+    <div class="hero-logo">
+      <img src="https://github.com/user-attachments/assets/1f3709cc-6eec-4a49-bf6b-8ae43ddf4fb7" alt="Mysticon">
+    </div>
+    <div class="hero-title">
+      <h1>Mysticon</h1>
+      <p>where fantasy characters come to life</p>
+    </div>
+  </main>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="drawer" id="drawer">
+    <button class="drawer-close" id="drawer-close"><i data-lucide="x"></i></button>
+    <div class="drawer-content">
+      <h2 class="drawer-title">About</h2>
+    </div>
+  </aside>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
