@@ -11,6 +11,7 @@ Mysticon is a collection of ereader dictionary for fantasy series. The following
 | [Die Hexer Saga](/hexer) | A. Sapkowski | de | kindle |
 | [Agatha Christie characters](/agatha) | A. Christie | en | stardict |
 | [The Malazan book of the Fallen](/malazan) | S. Erikson | en | stardict |
+| [Memory, Sorrow and Thorn](/memory_sorrow_thorn) | T. Williams | en | stardict |
 | [Zamonien](/zamonien) | W. Moers | de | stardict |
 | [The Silmarillion](/silmarillin) | J. R. R. Tolkien | en | stardict |
 
