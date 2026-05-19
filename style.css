@@ -98,7 +98,7 @@ body.page-collections {
   right: 10vw;
   bottom: 30vh;
   opacity: 0;
-  animation: logoReveal 2.8s cubic-bezier(0.22, 0.61, 0.36, 1) 0.2s forwards;
+  animation: logoReveal 1.6s cubic-bezier(0.22, 0.61, 0.36, 1) 0.2s forwards;
   -webkit-mask-image: linear-gradient(to right,  transparent 0%, black 18%, black 82%, transparent 100%),
                       linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
   -webkit-mask-composite: source-in;
