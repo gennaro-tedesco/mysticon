@@ -1,6 +1,6 @@
 <h1 align="center">
-  <br>
   <a href="https://gennaro-tedesco.github.io/mysticon">mysticon</a>
+  <br>
   <br>
   <img src="https://github.com/user-attachments/assets/1f3709cc-6eec-4a49-bf6b-8ae43ddf4fb7" width="300">
   <br>
