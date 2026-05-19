@@ -33,24 +33,25 @@
     <div class="card-grid" id="card-grid"></div>
   </main>
 
-  <div class="modal-backdrop" id="modal-backdrop">
-    <div class="modal" id="modal">
-      <button class="modal-close" id="modal-close">✕</button>
-      <div class="modal-title"></div>
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-el">
+      <button class="modal-close" id="modal-close" aria-label="Close dialog">✕</button>
+      <div class="modal-title" id="modal-title-el"></div>
       <div class="modal-author"></div>
       <div class="modal-tags"></div>
-      <a class="modal-download" id="modal-download">Download</a>
+      <button class="modal-download" id="modal-download">Download</button>
+      <p class="modal-error" id="modal-error"></p>
       <div class="modal-progress" id="modal-progress">
         <div class="modal-progress-bar" id="modal-progress-bar"></div>
       </div>
     </div>
   </div>
 
-  <div class="drawer-overlay" id="drawer-overlay"></div>
-  <aside class="drawer" id="drawer">
-    <button class="drawer-close" id="drawer-close"><i data-lucide="x"></i></button>
+  <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drawer-heading-el">
+    <button class="drawer-close" id="drawer-close" aria-label="Close drawer"><i data-lucide="x"></i></button>
     <div class="drawer-content">
-      <h2 class="drawer-title">About</h2>
+      <h2 class="drawer-title" id="drawer-heading-el">About</h2>
     </div>
   </aside>
 

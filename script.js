@@ -30,13 +30,46 @@ if (themeBtn) {
 const drawer = document.getElementById("drawer");
 const drawerOverlay = document.getElementById("drawer-overlay");
 
+function makeFocusTrap(container) {
+  function onKeyDown(e) {
+    if (e.key !== "Tab") return;
+    const focusable = Array.from(
+      container.querySelectorAll(
+        'button:not([disabled]), [href], input:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )
+    );
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
+  container.addEventListener("keydown", onKeyDown);
+  return () => container.removeEventListener("keydown", onKeyDown);
+}
+
+let _drawerOpener = null;
+let _releaseDrawerTrap = null;
+
 function openDrawer() {
+  _drawerOpener = document.activeElement;
+  drawer.removeAttribute("aria-hidden");
   drawer.classList.add("open");
   drawerOverlay.classList.add("visible");
+  document.getElementById("drawer-close").focus();
+  _releaseDrawerTrap = makeFocusTrap(drawer);
 }
 function closeDrawer() {
+  if (_releaseDrawerTrap) { _releaseDrawerTrap(); _releaseDrawerTrap = null; }
+  drawer.setAttribute("aria-hidden", "true");
   drawer.classList.remove("open");
   drawerOverlay.classList.remove("visible");
+  _drawerOpener?.focus();
 }
 
 document
@@ -138,6 +171,12 @@ if (grid) {
   // Fetch a single URL, reporting byte progress via onProgress(loaded, total)
   async function fetchWithProgress(url, onProgress) {
     const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`);
+    if (!res.body) {
+      const buf = await res.arrayBuffer();
+      onProgress(buf.byteLength, buf.byteLength);
+      return new Uint8Array(buf);
+    }
     const total = parseInt(res.headers.get("Content-Length") || "0");
     const reader = res.body.getReader();
     const chunks = [];
@@ -168,49 +207,49 @@ if (grid) {
     URL.revokeObjectURL(url);
   }
 
-  async function startDownload(book, btnEl, progressEl, barEl) {
+  async function startDownload(book, btnEl, progressEl, barEl, errorEl) {
     btnEl.classList.add("hidden");
+    errorEl.classList.remove("visible");
     progressEl.classList.add("visible");
     barEl.style.width = "0%";
 
-    const urls = book.files.map((f) => `${RAW}/${f.path}`);
-    const names = book.files.map((f) => f.name);
-    const totalFiles = urls.length;
-    const fileBuffers = new Array(totalFiles);
+    let succeeded = false;
+    try {
+      const urls = book.files.map((f) => `${RAW}/${f.path}`);
+      const names = book.files.map((f) => f.name);
+      const totalFiles = urls.length;
+      const fileBuffers = new Array(totalFiles);
 
-    // Fetch all files, spreading progress evenly across files
-    for (let i = 0; i < totalFiles; i++) {
-      const baseProgress = (i / totalFiles) * 100;
-      fileBuffers[i] = await fetchWithProgress(urls[i], (loaded, total) => {
-        const fileProgress = (loaded / total) * (100 / totalFiles);
-        barEl.style.width = baseProgress + fileProgress + "%";
-      });
-    }
+      for (let i = 0; i < totalFiles; i++) {
+        const baseProgress = (i / totalFiles) * 100;
+        fileBuffers[i] = await fetchWithProgress(urls[i], (loaded, total) => {
+          const fileProgress = (loaded / total) * (100 / totalFiles);
+          barEl.style.width = baseProgress + fileProgress + "%";
+        });
+      }
 
-    barEl.style.width = "100%";
+      barEl.style.width = "100%";
 
-    // Single file: download directly; multiple files: zip with fflate
-    if (book.zipName === null) {
-      triggerDownload(new Blob([fileBuffers[0]]), names[0]);
-    } else {
-      const zipInput = {};
-      names.forEach((name, i) => {
-        zipInput[name] = fileBuffers[i];
-      });
-      const zipped = fflate.zipSync(zipInput);
-      triggerDownload(
-        new Blob([zipped], { type: "application/zip" }),
-        book.zipName,
-      );
-    }
+      if (book.zipName === null) {
+        triggerDownload(new Blob([fileBuffers[0]]), names[0]);
+      } else {
+        const zipInput = {};
+        names.forEach((name, i) => { zipInput[name] = fileBuffers[i]; });
+        const zipped = fflate.zipSync(zipInput);
+        triggerDownload(new Blob([zipped], { type: "application/zip" }), book.zipName);
+      }
 
-    // Brief pause so the full bar is visible, then close
-    setTimeout(() => {
-      closeModal();
+      await new Promise((r) => setTimeout(r, 400));
+      succeeded = true;
+    } catch {
+      errorEl.textContent = "Download failed. Please try again.";
+      errorEl.classList.add("visible");
+    } finally {
       btnEl.classList.remove("hidden");
       progressEl.classList.remove("visible");
       barEl.style.width = "0%";
-    }, 400);
+      if (succeeded) closeModal();
+    }
   }
 
   // Hover panel
@@ -235,21 +274,33 @@ if (grid) {
   const modalDlBtn = document.getElementById("modal-download");
   const progressEl = document.getElementById("modal-progress");
   const barEl = document.getElementById("modal-progress-bar");
+  const errorEl = document.getElementById("modal-error");
+
+  let _modalOpener = null;
+  let _releaseModalTrap = null;
 
   function openModal(book) {
+    _modalOpener = document.activeElement;
     modalTitle.textContent = book.title;
     modalAuthor.textContent = book.author;
     modalTags.innerHTML = `
       <span class="card-tag">${book.lang}</span>
       <span class="card-tag">${book.format}</span>
     `;
+    errorEl.classList.remove("visible");
     modalDlBtn.onclick = () =>
-      startDownload(book, modalDlBtn, progressEl, barEl);
+      startDownload(book, modalDlBtn, progressEl, barEl, errorEl);
+    backdrop.removeAttribute("aria-hidden");
     backdrop.classList.add("visible");
+    document.getElementById("modal-close").focus();
+    _releaseModalTrap = makeFocusTrap(document.getElementById("modal"));
   }
 
   function closeModal() {
+    if (_releaseModalTrap) { _releaseModalTrap(); _releaseModalTrap = null; }
     backdrop.classList.remove("visible");
+    backdrop.setAttribute("aria-hidden", "true");
+    _modalOpener?.focus();
   }
 
   document.getElementById("modal-close").addEventListener("click", closeModal);
@@ -261,7 +312,8 @@ if (grid) {
   });
 
   books.forEach((book) => {
-    const card = document.createElement("div");
+    const card = document.createElement("button");
+    card.type = "button";
     card.className = "card";
     card.innerHTML = `<span class="card-title">${book.title}</span>`;
 

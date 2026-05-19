@@ -33,11 +33,11 @@
     </div>
   </main>
 
-  <div class="drawer-overlay" id="drawer-overlay"></div>
-  <aside class="drawer" id="drawer">
-    <button class="drawer-close" id="drawer-close"><i data-lucide="x"></i></button>
+  <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drawer-heading-el">
+    <button class="drawer-close" id="drawer-close" aria-label="Close drawer"><i data-lucide="x"></i></button>
     <div class="drawer-content">
-      <h2 class="drawer-title">About</h2>
+      <h2 class="drawer-title" id="drawer-heading-el">About</h2>
     </div>
   </aside>
 
