@@ -252,19 +252,26 @@ if (grid) {
     }
   }
 
-  // Hover panel
-  const panel = document.createElement("div");
-  panel.className = "hover-panel";
-  panel.innerHTML = `
-    <div class="hover-panel-title"></div>
-    <div class="hover-panel-author"></div>
-    <div class="hover-panel-tags"></div>
-  `;
-  document.body.appendChild(panel);
+  const canHover = matchMedia("(hover: hover) and (pointer: fine)").matches;
+  let panel = null;
+  let panelTitle = null;
+  let panelAuthor = null;
+  let panelTags = null;
 
-  const panelTitle = panel.querySelector(".hover-panel-title");
-  const panelAuthor = panel.querySelector(".hover-panel-author");
-  const panelTags = panel.querySelector(".hover-panel-tags");
+  if (canHover) {
+    panel = document.createElement("div");
+    panel.className = "hover-panel";
+    panel.innerHTML = `
+      <div class="hover-panel-title"></div>
+      <div class="hover-panel-author"></div>
+      <div class="hover-panel-tags"></div>
+    `;
+    document.body.appendChild(panel);
+
+    panelTitle = panel.querySelector(".hover-panel-title");
+    panelAuthor = panel.querySelector(".hover-panel-author");
+    panelTags = panel.querySelector(".hover-panel-tags");
+  }
 
   // Modal
   const backdrop = document.getElementById("modal-backdrop");
@@ -317,30 +324,32 @@ if (grid) {
     card.className = "card";
     card.innerHTML = `<span class="card-title">${book.title}</span>`;
 
-    card.addEventListener("mouseenter", () => {
-      panel.classList.remove("visible");
-      panel.classList.add("reset");
+    if (canHover) {
+      card.addEventListener("mouseenter", () => {
+        panel.classList.remove("visible");
+        panel.classList.add("reset");
 
-      panelTitle.textContent = book.title;
-      panelAuthor.textContent = book.author;
-      panelTags.innerHTML = `
-        <span class="card-tag">${book.lang}</span>
-        <span class="card-tag">${book.format}</span>
-      `;
+        panelTitle.textContent = book.title;
+        panelAuthor.textContent = book.author;
+        panelTags.innerHTML = `
+          <span class="card-tag">${book.lang}</span>
+          <span class="card-tag">${book.format}</span>
+        `;
 
-      panel.offsetHeight;
+        panel.offsetHeight;
 
-      const gridRect = grid.getBoundingClientRect();
-      panel.style.top =
-        gridRect.top + (gridRect.height - panel.offsetHeight) / 2 + "px";
+        const gridRect = grid.getBoundingClientRect();
+        panel.style.top =
+          gridRect.top + (gridRect.height - panel.offsetHeight) / 2 + "px";
 
-      panel.classList.remove("reset");
-      panel.classList.add("visible");
-    });
+        panel.classList.remove("reset");
+        panel.classList.add("visible");
+      });
 
-    card.addEventListener("mouseleave", () =>
-      panel.classList.remove("visible"),
-    );
+      card.addEventListener("mouseleave", () =>
+        panel.classList.remove("visible"),
+      );
+    }
     card.addEventListener("click", () => openModal(book));
 
     grid.appendChild(card);
