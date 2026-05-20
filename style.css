@@ -41,6 +41,12 @@ body.page-home {
   overflow: hidden;
 }
 
+@supports (height: 100dvh) {
+  html, body {
+    height: 100dvh;
+  }
+}
+
 body.page-collections {
   overflow-y: auto;
 }
@@ -88,6 +94,12 @@ body.page-collections {
   position: relative;
   width: 100vw;
   height: 100vh;
+}
+
+@supports (height: 100dvh) {
+  .hero {
+    height: 100dvh;
+  }
 }
 
 /* Logo — upper-right, 70vw × 60vh, edges feathered into background */
@@ -331,13 +343,20 @@ body.page-collections {
   min-height: 100vh;
 }
 
+@supports (min-height: 100dvh) {
+  .collections-page {
+    min-height: 100dvh;
+  }
+}
+
 .collections-bg-logo {
   position: fixed;
   top: 10vh;
   left: 30vw;
   right: 10vw;
   bottom: 30vh;
-  opacity: 0.5;
+  opacity: 0;
+  animation: collectionsLogoReveal 1.3s ease-out 0.2s forwards;
   pointer-events: none;
   z-index: 0;
   -webkit-mask-image: linear-gradient(to right,  transparent 0%, black 18%, black 82%, transparent 100%),
@@ -346,6 +365,12 @@ body.page-collections {
   mask-image: linear-gradient(to right,  transparent 0%, black 18%, black 82%, transparent 100%),
               linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
   mask-composite: intersect;
+}
+
+@keyframes collectionsLogoReveal {
+  0%   { opacity: 0; filter: blur(24px); }
+  60%  { opacity: 0.4; filter: blur(4px); }
+  100% { opacity: 0.5; filter: blur(0px); }
 }
 
 .collections-bg-logo img {
@@ -594,4 +619,161 @@ body.page-collections {
   width: 0%;
   background: var(--pastel);
   transition: width 0.15s ease;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .nav-btn,
+  .theme-toggle,
+  .nav-home,
+  .drawer-close,
+  .modal-close,
+  .modal-download {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .theme-toggle,
+  .nav-home,
+  .drawer-close,
+  .modal-close {
+    justify-content: center;
+  }
+
+  .card {
+    min-height: 48px;
+  }
+
+  .hover-panel {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --nav-h: 56px;
+  }
+
+  body.page-home {
+    overflow: auto;
+  }
+
+  .nav {
+    justify-content: flex-start;
+    padding: 0 18px;
+  }
+
+  .nav-links {
+    gap: 0;
+  }
+
+  .nav-btn {
+    padding: 8px 12px;
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+  }
+
+  .theme-toggle {
+    right: 18px;
+  }
+
+  .nav-home {
+    left: 18px;
+  }
+
+  .page-collections .nav {
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero-logo {
+    top: 12vh;
+    left: 8vw;
+    right: 8vw;
+    bottom: 42vh;
+  }
+
+  .hero-title {
+    left: 8vw;
+    right: 8vw;
+    bottom: 10vh;
+    max-width: none;
+  }
+
+  .hero-title h1 {
+    font-size: clamp(2.5rem, 14vw, 4rem);
+  }
+
+  .hero-title p {
+    font-size: clamp(1rem, 5vw, 1.35rem);
+    line-height: 1.35;
+  }
+
+  .drawer {
+    width: 100vw;
+  }
+
+  .drawer-content {
+    padding: 64px 24px 28px;
+  }
+
+  .drawer-body {
+    text-align: left;
+  }
+
+  .collections-page {
+    padding: calc(var(--nav-h) + 42px) 20px 42px;
+  }
+
+  .collections-bg-logo {
+    top: 18vh;
+    left: 12vw;
+    right: 12vw;
+    bottom: 38vh;
+    opacity: 0.35;
+    animation-name: collectionsLogoRevealMobile;
+  }
+
+  @keyframes collectionsLogoRevealMobile {
+    0%   { opacity: 0; filter: blur(24px); }
+    60%  { opacity: 0.3; filter: blur(4px); }
+    100% { opacity: 0.35; filter: blur(0px); }
+  }
+
+  .card-grid {
+    width: 100%;
+  }
+
+  .card {
+    padding: 14px 12px;
+    border-left-width: 3px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .modal-backdrop {
+    align-items: flex-end;
+    padding: 16px;
+  }
+
+  .modal {
+    width: 100%;
+    max-height: calc(100dvh - 32px);
+    padding: 48px 24px 32px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-btn {
+    padding-inline: 8px;
+    letter-spacing: 0.1em;
+  }
+
+  .collections-page {
+    padding-inline: 14px;
+  }
 }
