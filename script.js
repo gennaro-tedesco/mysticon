@@ -35,8 +35,8 @@ function makeFocusTrap(container) {
     if (e.key !== "Tab") return;
     const focusable = Array.from(
       container.querySelectorAll(
-        'button:not([disabled]), [href], input:not([disabled]), [tabindex]:not([tabindex="-1"])'
-      )
+        'button:not([disabled]), [href], input:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      ),
     );
     if (!focusable.length) return;
     const first = focusable[0];
@@ -65,7 +65,10 @@ function openDrawer() {
   _releaseDrawerTrap = makeFocusTrap(drawer);
 }
 function closeDrawer() {
-  if (_releaseDrawerTrap) { _releaseDrawerTrap(); _releaseDrawerTrap = null; }
+  if (_releaseDrawerTrap) {
+    _releaseDrawerTrap();
+    _releaseDrawerTrap = null;
+  }
   drawer.setAttribute("aria-hidden", "true");
   drawer.classList.remove("open");
   drawerOverlay.classList.remove("visible");
@@ -122,7 +125,7 @@ if (grid) {
       author: "Steven Erikson",
       lang: "EN",
       format: "StarDict",
-      files: ["Malazan.dict", "Malazan.idx", "Malazan.ifo", "Malazan.syn"].map(
+      files: ["malazan.dict", "malazan.idx", "malazan.ifo", "malazan.syn"].map(
         (n) => ({ path: `malazan/dict/${n}`, name: n }),
       ),
       zipName: "malazan.zip",
@@ -234,9 +237,14 @@ if (grid) {
         triggerDownload(new Blob([fileBuffers[0]]), names[0]);
       } else {
         const zipInput = {};
-        names.forEach((name, i) => { zipInput[name] = fileBuffers[i]; });
+        names.forEach((name, i) => {
+          zipInput[name] = fileBuffers[i];
+        });
         const zipped = fflate.zipSync(zipInput);
-        triggerDownload(new Blob([zipped], { type: "application/zip" }), book.zipName);
+        triggerDownload(
+          new Blob([zipped], { type: "application/zip" }),
+          book.zipName,
+        );
       }
 
       await new Promise((r) => setTimeout(r, 400));
@@ -304,7 +312,10 @@ if (grid) {
   }
 
   function closeModal() {
-    if (_releaseModalTrap) { _releaseModalTrap(); _releaseModalTrap = null; }
+    if (_releaseModalTrap) {
+      _releaseModalTrap();
+      _releaseModalTrap = null;
+    }
     backdrop.classList.remove("visible");
     backdrop.setAttribute("aria-hidden", "true");
     _modalOpener?.focus();

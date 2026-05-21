@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mysticon — Collections</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600&family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600&family=Caudex:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
+  <script>
+    document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');
+  </script>
 </head>
+
 <body class="page-collections">
 
   <nav class="nav">
@@ -22,13 +28,14 @@
     </div>
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
       <i data-lucide="moon" class="icon-light-mode"></i>
-      <i data-lucide="sun"  class="icon-dark-mode"></i>
+      <i data-lucide="sun" class="icon-dark-mode"></i>
     </button>
   </nav>
 
   <main class="collections-page">
     <div class="collections-bg-logo">
-      <img src="https://github.com/user-attachments/assets/1f3709cc-6eec-4a49-bf6b-8ae43ddf4fb7" alt="">
+      <img src="https://github.com/user-attachments/assets/1f3709cc-6eec-4a49-bf6b-8ae43ddf4fb7"
+        alt="">
     </div>
     <div class="card-grid" id="card-grid"></div>
   </main>
@@ -48,8 +55,10 @@
   </div>
 
   <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
-  <aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drawer-heading-el">
-    <button class="drawer-close" id="drawer-close" aria-label="Close drawer"><i data-lucide="x"></i></button>
+  <aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="drawer-heading-el">
+    <button class="drawer-close" id="drawer-close" aria-label="Close drawer"><i
+        data-lucide="x"></i></button>
     <div class="drawer-content">
       <h2 class="drawer-title" id="drawer-heading-el">About</h2>
     </div>
@@ -59,4 +68,5 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
