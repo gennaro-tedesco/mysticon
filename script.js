@@ -135,11 +135,11 @@ if (grid) {
       author: "Tad Williams",
       lang: "EN",
       format: "StarDict",
-      files: ["MST.dict", "MST.idx", "MST.ifo", "MST.syn"].map((n) => ({
+      files: ["mst.dict", "mst.idx", "mst.ifo", "mst.syn"].map((n) => ({
         path: `memory_sorrow_thorn/dict/${n}`,
         name: n,
       })),
-      zipName: "MST.zip",
+      zipName: "mst.zip",
     },
     {
       title: "Zamonien",
