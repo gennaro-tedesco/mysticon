@@ -1,4 +1,4 @@
-BOOK=MST
+BOOK=mst
 DICT_DIR=dict/
 MERGED_FILE=${BOOK}_combined.stardict
 
