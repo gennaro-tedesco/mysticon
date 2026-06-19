@@ -155,17 +155,17 @@ if (grid) {
       zipName: "zamonien.zip",
     },
     {
-      title: "The Silmarillion",
+      title: "Tolkien",
       author: "J.R.R. Tolkien",
       lang: "EN",
       format: "StarDict",
       files: [
-        "Silmarillion.dict",
-        "Silmarillion.idx",
-        "Silmarillion.ifo",
-        "Silmarillion.syn",
-      ].map((n) => ({ path: `silmarillion/dict/${n}`, name: n })),
-      zipName: "silmarillion.zip",
+        "Tolkien.dict",
+        "Tolkien.idx",
+        "Tolkien.ifo",
+        "Tolkien.syn",
+      ].map((n) => ({ path: `tolkien/dict/${n}`, name: n })),
+      zipName: "tolkien.zip",
     },
   ];
 
