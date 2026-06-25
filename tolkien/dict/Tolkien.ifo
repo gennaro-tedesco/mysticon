@@ -1,8 +1,8 @@
 StarDict's dict ifo file
 version=3.0.0
 bookname=Tolkien Lexicon
-wordcount=190
-idxfilesize=3136
+wordcount=201
+idxfilesize=3327
 sametypesequence=h
-synwordcount=58
+synwordcount=76
 description=
