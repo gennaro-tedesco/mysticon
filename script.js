@@ -167,6 +167,19 @@ if (grid) {
       ].map((n) => ({ path: `tolkien/dict/${n}`, name: n })),
       zipName: "tolkien.zip",
     },
+    {
+      title: "The Black Company",
+      author: "Glen Cook",
+      lang: "EN",
+      format: "StarDict",
+      files: [
+        "the_black_company.dict",
+        "the_black_company.idx",
+        "the_black_company.ifo",
+        "the_black_company.syn",
+      ].map((n) => ({ path: `the_black_company/dict/${n}`, name: n })),
+      zipName: "the_black_company.zip",
+    },
   ];
 
   // Fetch a single URL, reporting byte progress via onProgress(loaded, total)

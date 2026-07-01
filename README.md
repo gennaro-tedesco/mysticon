@@ -17,6 +17,7 @@ Mysticon is a collection of ereader dictionary for fantasy series. The following
 | [Memory, Sorrow and Thorn](/memory_sorrow_thorn) | T. Williams | en | stardict |
 | [Zamonien](/zamonien) | W. Moers | de | stardict |
 | [Tolkien](/tolkien) | J. R. R. Tolkien | en | stardict |
+| [The Black Company](/the_black_company) | G. Cook | en | stardict |
 
 ## Installation
 
