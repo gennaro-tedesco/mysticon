@@ -1,4 +1,5 @@
 BOOK=the_black_company
+NAME=$(shell echo "$(BOOK)" | tr '_' ' ' | awk '{for(i=1;i<=NF;i++) $$i=toupper(substr($$i,1,1)) substr($$i,2); print}')
 DICT_DIR=dict/
 MERGED_FILE=${BOOK}_combined.stardict
 
@@ -19,5 +20,5 @@ build: merge
 		--read-format=Tabfile \
 		--write-format=Stardict \
 		--write-options="sametypesequence=h" \
-		--name="${BOOK} Lexicon"
+		--name="$(NAME) Lexicon"
 	rm -f ${MERGED_FILE}
