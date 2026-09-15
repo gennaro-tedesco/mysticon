@@ -180,6 +180,19 @@ if (grid) {
       ].map((n) => ({ path: `the_black_company/dict/${n}`, name: n })),
       zipName: "the_black_company.zip",
     },
+    {
+      title: "Krieg und Frieden",
+      author: "Lew Tolstoi",
+      lang: "DE",
+      format: "StarDict",
+      files: [
+        "krieg_und_frieden.dict",
+        "krieg_und_frieden.idx",
+        "krieg_und_frieden.ifo",
+        "krieg_und_frieden.syn",
+      ].map((n) => ({ path: `krieg_frieden/dict/${n}`, name: n })),
+      zipName: "krieg_und_frieden.zip",
+    },
   ];
 
   // Fetch a single URL, reporting byte progress via onProgress(loaded, total)
