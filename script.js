@@ -193,6 +193,22 @@ if (grid) {
       ].map((n) => ({ path: `krieg_frieden/dict/${n}`, name: n })),
       zipName: "krieg_und_frieden.zip",
     },
+    {
+      title: "The Second Apocalypse",
+      author: "R. Scott Bakker",
+      lang: "EN",
+      format: "StarDict",
+      files: [
+        "second_apocalypse.dict",
+        "second_apocalypse.idx",
+        "second_apocalypse.ifo",
+        "second_apocalypse.syn",
+      ].map((n) => ({
+        path: `second_apocalypse/dict/${n}`,
+        name: n,
+      })),
+      zipName: "second_apocalypse.zip",
+    },
   ];
 
   // Fetch a single URL, reporting byte progress via onProgress(loaded, total)
