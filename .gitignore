@@ -1,5 +1,6 @@
 .DS_Store
 *.epub
+.mcp_data/
 
 **/AGENTS.md
 **/*combined.txt
