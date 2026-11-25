@@ -209,6 +209,22 @@ if (grid) {
       })),
       zipName: "second_apocalypse.zip",
     },
+    {
+      title: "The Winternight Trilogy",
+      author: "Katherine Arden",
+      lang: "EN",
+      format: "StarDict",
+      files: [
+        "the_winternight_trilogy.dict",
+        "the_winternight_trilogy.idx",
+        "the_winternight_trilogy.ifo",
+        "the_winternight_trilogy.syn",
+      ].map((n) => ({
+        path: `the_winternight_trilogy/dict/${n}`,
+        name: n,
+      })),
+      zipName: "the_winternight_trilogy.zip",
+    },
   ];
 
   // Fetch a single URL, reporting byte progress via onProgress(loaded, total)
