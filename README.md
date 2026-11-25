@@ -19,6 +19,7 @@ Mysticon is a collection of ereader dictionary for fantasy series. The following
 | [Tolkien](/tolkien) | J. R. R. Tolkien | en | stardict |
 | [The Black Company](/the_black_company) | G. Cook | en | stardict |
 | [The Second Apocalypse](/second_apocalypse) | R. Scott Bakker | en | stardict |
+| [The Winternight Trilogy](/the_winternight_trilogy) | K. Arden | en | stardict |
 | [Krieg und Frieden](/krieg_frieden) | L. Tolstoi | de | stardict |
 
 ## Installation
